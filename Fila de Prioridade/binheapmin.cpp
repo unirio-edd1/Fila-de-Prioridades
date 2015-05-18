@@ -116,9 +116,19 @@ binHeapMin::~binHeapMin(){
     delete [] vetor;
 }
 
+void troca(int&a, int&b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
 
 void binHeapMin::heapsort(int n){
-    cout << "Implementar!\n";
+    int dir = n;
+    
+    for (int i = 1; i != dir;) {
+        troca(vetor[i], vetor[dir]);
+        refaz(i, --dir);
+    }
 }
 
 void binHeapMin::imprime(){
