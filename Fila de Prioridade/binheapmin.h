@@ -4,6 +4,11 @@
 #include <iostream>
 using namespace std;
 
+/**
+ Definição de HEAP: 
+    1. O valor de cada nó não é menor do que os valores armazenados em cada um dos seus filhos.
+    2. A árvore é perfeitamente balanceada e as folhas no último nível estão todas nas posições mais a esquerda.
+ */
 class binHeapMin{
 private:
     int n;               /* Numero de elementos no heap */
